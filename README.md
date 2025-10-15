@@ -67,7 +67,7 @@ Como el proyecto no usa dependencias externas, no es necesario crear un “fat j
 
 La firma `square(Integer)` espera un número JSON “crudo”. Para usar API Gateway, crea una REST API con un “Mapping Template” que transforme el body de la petición al número que espera Lambda.
 
-Pasos (REST API clásico):
+Pasos:
 
 1. AWS Console → API Gateway → Create API → “REST API” (Build).
 2. Crea un recurso, por ejemplo `/square`.
@@ -158,5 +158,3 @@ Para exponer por API Gateway vía CLI, se recomienda usar SAM/CloudFormation o C
 - Si creaste roles nuevos, revísalos antes de borrarlos (podrían estar en uso por otros recursos).
 
 ---
-
-Si necesitas añadir un handler compatible con “Lambda proxy” para evitar templates en API Gateway, avísame y lo agrego al proyecto con su empaquetado y pruebas.
